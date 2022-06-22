@@ -26,6 +26,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "My project.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
@@ -86,6 +87,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "Screen Shot 2022-06-22 at 3.33.44 PM-17.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

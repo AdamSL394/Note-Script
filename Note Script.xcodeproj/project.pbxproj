@@ -14,12 +14,13 @@
 		6605066E286157E800107CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6605066D286157E800107CB4 /* Assets.xcassets */; };
 		66050671286157E800107CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6605066F286157E800107CB4 /* LaunchScreen.storyboard */; };
 		6651A06028625B5300FD8D78 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651A05F28625B5200FD8D78 /* AddNoteViewController.swift */; };
+		666B27172863C6AA00DE210C /* NotePrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666B27162863C6AA00DE210C /* NotePrototypeCell.swift */; };
 		66CA406D2861602700CC3E2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66CA406C2861602700CC3E2F /* Alamofire */; };
 		66CA406F2861605C00CC3E2F /* API_Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA406E2861605C00CC3E2F /* API_Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66050661286157E200107CB4 /* Note-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66050661286157E200107CB4 /* Note Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66050664286157E200107CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66050666286157E200107CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		66050668286157E200107CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		66050670286157E800107CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66050672286157E800107CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6651A05F28625B5200FD8D78 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		666B27162863C6AA00DE210C /* NotePrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePrototypeCell.swift; sourceTree = "<group>"; };
 		66CA406E2861605C00CC3E2F /* API_Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +56,7 @@
 		66050662286157E200107CB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66050661286157E200107CB4 /* Note-Script.app */,
+				66050661286157E200107CB4 /* Note Script.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +73,7 @@
 				66050672286157E800107CB4 /* Info.plist */,
 				66CA406E2861605C00CC3E2F /* API_Functions.swift */,
 				6651A05F28625B5200FD8D78 /* AddNoteViewController.swift */,
+				666B27162863C6AA00DE210C /* NotePrototypeCell.swift */,
 			);
 			path = "Note-Script-App";
 			sourceTree = "<group>";
@@ -78,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66050660286157E200107CB4 /* Note-Script */ = {
+		66050660286157E200107CB4 /* Note Script */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66050675286157E800107CB4 /* Build configuration list for PBXNativeTarget "Note-Script" */;
+			buildConfigurationList = 66050675286157E800107CB4 /* Build configuration list for PBXNativeTarget "Note Script" */;
 			buildPhases = (
 				6605065D286157E200107CB4 /* Sources */,
 				6605065E286157E200107CB4 /* Frameworks */,
@@ -90,12 +93,12 @@
 			);
 			dependencies = (
 			);
-			name = "Note-Script";
+			name = "Note Script";
 			packageProductDependencies = (
 				66CA406C2861602700CC3E2F /* Alamofire */,
 			);
 			productName = "Note-Script";
-			productReference = 66050661286157E200107CB4 /* Note-Script.app */;
+			productReference = 66050661286157E200107CB4 /* Note Script.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6605065C286157E100107CB4 /* Build configuration list for PBXProject "Note-Script" */;
+			buildConfigurationList = 6605065C286157E100107CB4 /* Build configuration list for PBXProject "Note Script" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66050660286157E200107CB4 /* Note-Script */,
+				66050660286157E200107CB4 /* Note Script */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +159,7 @@
 				66050669286157E200107CB4 /* ViewController.swift in Sources */,
 				66050665286157E200107CB4 /* AppDelegate.swift in Sources */,
 				6651A06028625B5300FD8D78 /* AddNoteViewController.swift in Sources */,
+				666B27172863C6AA00DE210C /* NotePrototypeCell.swift in Sources */,
 				66050667286157E200107CB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VASTK8AM3M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Note-Script/Info.plist";
+				INFOPLIST_FILE = "Note-Script-App/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +337,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VASTK8AM3M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Note-Script/Info.plist";
+				INFOPLIST_FILE = "Note-Script-App/info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "Note-Script-App/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -355,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6605065C286157E100107CB4 /* Build configuration list for PBXProject "Note-Script" */ = {
+		6605065C286157E100107CB4 /* Build configuration list for PBXProject "Note Script" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66050673286157E800107CB4 /* Debug */,
@@ -364,7 +369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66050675286157E800107CB4 /* Build configuration list for PBXNativeTarget "Note-Script" */ = {
+		66050675286157E800107CB4 /* Build configuration list for PBXNativeTarget "Note Script" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66050676286157E800107CB4 /* Debug */,

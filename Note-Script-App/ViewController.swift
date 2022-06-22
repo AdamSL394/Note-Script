@@ -7,13 +7,12 @@
 
 import UIKit
 
-protocol DataDelegate {
-    func updateArray(newArray: String)
-}
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var notesTableView: UITableView!
     var notesArray = [Note]()
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -22,23 +21,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "updateNoteSegue" {
             vc.note = notesArray[notesTableView.indexPathForSelectedRow!.row]
             vc.update = true
-            
-            
         }
+        
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notesArray.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
-        cell.textLabel?.text = notesArray[indexPath.row].text
-        return cell
-    }
+    // MARK: - LifeCycle Hooks
     
-
-    @IBOutlet weak var notesTableView: UITableView!
+    override func viewWillAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchNotes()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         APIFunctions.functions.fetchNotes()
@@ -48,13 +40,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchNotes()
-
         notesTableView.delegate = self
         notesTableView.dataSource = self
     }
-
-
+    
+    // MARK: - Tableview delegates
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notesArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath) as! NotePrototypeCell
+        
+        cell.date.text = notesArray[indexPath.row].date
+        cell.note.text = notesArray[indexPath.row].text
+        
+        return cell
+    }
+    
+    
 }
+
+protocol DataDelegate {
+    func updateArray(newArray: String)
+}
+
 
 extension ViewController: DataDelegate {
     
